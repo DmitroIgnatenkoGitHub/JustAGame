@@ -9,8 +9,8 @@ public class Hero : MonoBehaviour
     [SerializeField] private float jumpForce = 7f;
     private bool isGrounded = false;
 
-    private bool isAttacking;
-    private bool isRecharged;
+    //private bool isAttacking;
+    //private bool isRecharged;
 
     public Transform attackPos;
     public float attackRange;
@@ -29,7 +29,7 @@ public class Hero : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
-        isRecharged = true;
+        //isRecharged = true;
     }
     private void Run()
     {
